@@ -77,6 +77,7 @@
             this.sushibarLabel.Size = new System.Drawing.Size(78, 20);
             this.sushibarLabel.TabIndex = 1;
             this.sushibarLabel.Text = "Sushi Bar";
+            this.sushibarLabel.Click += new System.EventHandler(this.sushibarLabel_Click);
             // 
             // label3
             // 
@@ -268,7 +269,7 @@
             this.changeTotal.AutoSize = true;
             this.changeTotal.BackColor = System.Drawing.Color.Black;
             this.changeTotal.ForeColor = System.Drawing.Color.White;
-            this.changeTotal.Location = new System.Drawing.Point(139, 390);
+            this.changeTotal.Location = new System.Drawing.Point(97, 390);
             this.changeTotal.Name = "changeTotal";
             this.changeTotal.Size = new System.Drawing.Size(13, 13);
             this.changeTotal.TabIndex = 21;
@@ -288,7 +289,7 @@
             // neworderButton
             // 
             this.neworderButton.Enabled = false;
-            this.neworderButton.Location = new System.Drawing.Point(265, 416);
+            this.neworderButton.Location = new System.Drawing.Point(271, 321);
             this.neworderButton.Name = "neworderButton";
             this.neworderButton.Size = new System.Drawing.Size(104, 23);
             this.neworderButton.TabIndex = 23;
