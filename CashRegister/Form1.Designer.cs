@@ -29,42 +29,42 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.label1 = new System.Windows.Forms.Label();
+            this.background = new System.Windows.Forms.Label();
             this.sushibarLabel = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.titleBlock = new System.Windows.Forms.Label();
+            this.sashimiLabel = new System.Windows.Forms.Label();
             this.sushiInput = new System.Windows.Forms.TextBox();
             this.sashimiInput = new System.Windows.Forms.TextBox();
             this.rollInput = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.sushiLabel = new System.Windows.Forms.Label();
+            this.rollsLabel = new System.Windows.Forms.Label();
             this.calcButton = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.subtotalLabel = new System.Windows.Forms.Label();
+            this.taxLabel = new System.Windows.Forms.Label();
+            this.totalLabel = new System.Windows.Forms.Label();
             this.subtotalPrice = new System.Windows.Forms.Label();
             this.taxAmount = new System.Windows.Forms.Label();
             this.totalPrice = new System.Windows.Forms.Label();
             this.tenderedText = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
+            this.tenderedLabel = new System.Windows.Forms.Label();
             this.changeButton = new System.Windows.Forms.Button();
-            this.label12 = new System.Windows.Forms.Label();
+            this.changeLabel = new System.Windows.Forms.Label();
             this.changeTotal = new System.Windows.Forms.Label();
             this.recieptPrint = new System.Windows.Forms.Button();
             this.neworderButton = new System.Windows.Forms.Button();
             this.recieptLabel = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.recieptStart = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // background
             // 
-            this.label1.BackColor = System.Drawing.Color.Black;
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Location = new System.Drawing.Point(13, 59);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(178, 398);
-            this.label1.TabIndex = 0;
+            this.background.BackColor = System.Drawing.Color.Black;
+            this.background.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.background.Location = new System.Drawing.Point(13, 59);
+            this.background.Name = "background";
+            this.background.Size = new System.Drawing.Size(178, 398);
+            this.background.TabIndex = 0;
             // 
             // sushibarLabel
             // 
@@ -77,27 +77,28 @@
             this.sushibarLabel.Size = new System.Drawing.Size(78, 20);
             this.sushibarLabel.TabIndex = 1;
             this.sushibarLabel.Text = "Sushi Bar";
+            this.sushibarLabel.Click += new System.EventHandler(this.sushibarLabel_Click);
             // 
-            // label3
+            // titleBlock
             // 
-            this.label3.BackColor = System.Drawing.Color.Black;
-            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label3.Location = new System.Drawing.Point(-75, -14);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(619, 57);
-            this.label3.TabIndex = 2;
+            this.titleBlock.BackColor = System.Drawing.Color.Black;
+            this.titleBlock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.titleBlock.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.titleBlock.Location = new System.Drawing.Point(-75, -14);
+            this.titleBlock.Name = "titleBlock";
+            this.titleBlock.Size = new System.Drawing.Size(619, 57);
+            this.titleBlock.TabIndex = 2;
             // 
-            // label5
+            // sashimiLabel
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Black;
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(28, 80);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(95, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Number of Sashimi\r\n";
+            this.sashimiLabel.AutoSize = true;
+            this.sashimiLabel.BackColor = System.Drawing.Color.Black;
+            this.sashimiLabel.ForeColor = System.Drawing.Color.White;
+            this.sashimiLabel.Location = new System.Drawing.Point(28, 80);
+            this.sashimiLabel.Name = "sashimiLabel";
+            this.sashimiLabel.Size = new System.Drawing.Size(95, 13);
+            this.sashimiLabel.TabIndex = 4;
+            this.sashimiLabel.Text = "Number of Sashimi\r\n";
             // 
             // sushiInput
             // 
@@ -123,27 +124,27 @@
             this.rollInput.TabIndex = 7;
             this.rollInput.TextChanged += new System.EventHandler(this.rollInput_TextChanged);
             // 
-            // label6
+            // sushiLabel
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Black;
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(28, 119);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(85, 13);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "Number of Sushi";
+            this.sushiLabel.AutoSize = true;
+            this.sushiLabel.BackColor = System.Drawing.Color.Black;
+            this.sushiLabel.ForeColor = System.Drawing.Color.White;
+            this.sushiLabel.Location = new System.Drawing.Point(28, 119);
+            this.sushiLabel.Name = "sushiLabel";
+            this.sushiLabel.Size = new System.Drawing.Size(85, 13);
+            this.sushiLabel.TabIndex = 8;
+            this.sushiLabel.Text = "Number of Sushi";
             // 
-            // label7
+            // rollsLabel
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Black;
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(28, 158);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(82, 13);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "Number of Rolls";
+            this.rollsLabel.AutoSize = true;
+            this.rollsLabel.BackColor = System.Drawing.Color.Black;
+            this.rollsLabel.ForeColor = System.Drawing.Color.White;
+            this.rollsLabel.Location = new System.Drawing.Point(28, 158);
+            this.rollsLabel.Name = "rollsLabel";
+            this.rollsLabel.Size = new System.Drawing.Size(82, 13);
+            this.rollsLabel.TabIndex = 9;
+            this.rollsLabel.Text = "Number of Rolls";
             // 
             // calcButton
             // 
@@ -156,38 +157,38 @@
             this.calcButton.UseVisualStyleBackColor = true;
             this.calcButton.Click += new System.EventHandler(this.calcButton_Click);
             // 
-            // label8
+            // subtotalLabel
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Black;
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(28, 226);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(46, 13);
-            this.label8.TabIndex = 11;
-            this.label8.Text = "Subtotal";
+            this.subtotalLabel.AutoSize = true;
+            this.subtotalLabel.BackColor = System.Drawing.Color.Black;
+            this.subtotalLabel.ForeColor = System.Drawing.Color.White;
+            this.subtotalLabel.Location = new System.Drawing.Point(28, 226);
+            this.subtotalLabel.Name = "subtotalLabel";
+            this.subtotalLabel.Size = new System.Drawing.Size(46, 13);
+            this.subtotalLabel.TabIndex = 11;
+            this.subtotalLabel.Text = "Subtotal";
             // 
-            // label9
+            // taxLabel
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Black;
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(28, 254);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(25, 13);
-            this.label9.TabIndex = 12;
-            this.label9.Text = "Tax";
+            this.taxLabel.AutoSize = true;
+            this.taxLabel.BackColor = System.Drawing.Color.Black;
+            this.taxLabel.ForeColor = System.Drawing.Color.White;
+            this.taxLabel.Location = new System.Drawing.Point(28, 254);
+            this.taxLabel.Name = "taxLabel";
+            this.taxLabel.Size = new System.Drawing.Size(25, 13);
+            this.taxLabel.TabIndex = 12;
+            this.taxLabel.Text = "Tax";
             // 
-            // label10
+            // totalLabel
             // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Black;
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(28, 286);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(31, 13);
-            this.label10.TabIndex = 13;
-            this.label10.Text = "Total";
+            this.totalLabel.AutoSize = true;
+            this.totalLabel.BackColor = System.Drawing.Color.Black;
+            this.totalLabel.ForeColor = System.Drawing.Color.White;
+            this.totalLabel.Location = new System.Drawing.Point(28, 286);
+            this.totalLabel.Name = "totalLabel";
+            this.totalLabel.Size = new System.Drawing.Size(31, 13);
+            this.totalLabel.TabIndex = 13;
+            this.totalLabel.Text = "Total";
             // 
             // subtotalPrice
             // 
@@ -230,16 +231,16 @@
             this.tenderedText.TabIndex = 17;
             this.tenderedText.TextChanged += new System.EventHandler(this.tenderedText_TextChanged);
             // 
-            // label11
+            // tenderedLabel
             // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Black;
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(28, 324);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(53, 13);
-            this.label11.TabIndex = 18;
-            this.label11.Text = "Tendered";
+            this.tenderedLabel.AutoSize = true;
+            this.tenderedLabel.BackColor = System.Drawing.Color.Black;
+            this.tenderedLabel.ForeColor = System.Drawing.Color.White;
+            this.tenderedLabel.Location = new System.Drawing.Point(28, 324);
+            this.tenderedLabel.Name = "tenderedLabel";
+            this.tenderedLabel.Size = new System.Drawing.Size(53, 13);
+            this.tenderedLabel.TabIndex = 18;
+            this.tenderedLabel.Text = "Tendered";
             // 
             // changeButton
             // 
@@ -252,23 +253,23 @@
             this.changeButton.UseVisualStyleBackColor = true;
             this.changeButton.Click += new System.EventHandler(this.changeButton_Click);
             // 
-            // label12
+            // changeLabel
             // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Black;
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(35, 390);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(44, 13);
-            this.label12.TabIndex = 20;
-            this.label12.Text = "Change";
+            this.changeLabel.AutoSize = true;
+            this.changeLabel.BackColor = System.Drawing.Color.Black;
+            this.changeLabel.ForeColor = System.Drawing.Color.White;
+            this.changeLabel.Location = new System.Drawing.Point(35, 390);
+            this.changeLabel.Name = "changeLabel";
+            this.changeLabel.Size = new System.Drawing.Size(44, 13);
+            this.changeLabel.TabIndex = 20;
+            this.changeLabel.Text = "Change";
             // 
             // changeTotal
             // 
             this.changeTotal.AutoSize = true;
             this.changeTotal.BackColor = System.Drawing.Color.Black;
             this.changeTotal.ForeColor = System.Drawing.Color.White;
-            this.changeTotal.Location = new System.Drawing.Point(139, 390);
+            this.changeTotal.Location = new System.Drawing.Point(97, 390);
             this.changeTotal.Name = "changeTotal";
             this.changeTotal.Size = new System.Drawing.Size(13, 13);
             this.changeTotal.TabIndex = 21;
@@ -288,7 +289,7 @@
             // neworderButton
             // 
             this.neworderButton.Enabled = false;
-            this.neworderButton.Location = new System.Drawing.Point(265, 416);
+            this.neworderButton.Location = new System.Drawing.Point(271, 321);
             this.neworderButton.Name = "neworderButton";
             this.neworderButton.Size = new System.Drawing.Size(104, 23);
             this.neworderButton.TabIndex = 23;
@@ -307,15 +308,15 @@
             this.recieptLabel.Size = new System.Drawing.Size(0, 11);
             this.recieptLabel.TabIndex = 24;
             // 
-            // label13
+            // recieptStart
             // 
-            this.label13.BackColor = System.Drawing.Color.Black;
-            this.label13.Font = new System.Drawing.Font("MS UI Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(226, 61);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(191, 17);
-            this.label13.TabIndex = 25;
+            this.recieptStart.BackColor = System.Drawing.Color.Black;
+            this.recieptStart.Font = new System.Drawing.Font("MS UI Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.recieptStart.ForeColor = System.Drawing.Color.White;
+            this.recieptStart.Location = new System.Drawing.Point(226, 61);
+            this.recieptStart.Name = "recieptStart";
+            this.recieptStart.Size = new System.Drawing.Size(191, 17);
+            this.recieptStart.TabIndex = 25;
             // 
             // Form1
             // 
@@ -323,30 +324,30 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(451, 466);
             this.Controls.Add(this.recieptLabel);
-            this.Controls.Add(this.label13);
+            this.Controls.Add(this.recieptStart);
             this.Controls.Add(this.neworderButton);
             this.Controls.Add(this.recieptPrint);
             this.Controls.Add(this.changeTotal);
-            this.Controls.Add(this.label12);
+            this.Controls.Add(this.changeLabel);
             this.Controls.Add(this.changeButton);
-            this.Controls.Add(this.label11);
+            this.Controls.Add(this.tenderedLabel);
             this.Controls.Add(this.tenderedText);
             this.Controls.Add(this.totalPrice);
             this.Controls.Add(this.taxAmount);
             this.Controls.Add(this.subtotalPrice);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.totalLabel);
+            this.Controls.Add(this.taxLabel);
+            this.Controls.Add(this.subtotalLabel);
             this.Controls.Add(this.calcButton);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.rollsLabel);
+            this.Controls.Add(this.sushiLabel);
             this.Controls.Add(this.rollInput);
             this.Controls.Add(this.sashimiInput);
             this.Controls.Add(this.sushiInput);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.sashimiLabel);
             this.Controls.Add(this.sushibarLabel);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.background);
+            this.Controls.Add(this.titleBlock);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Sushi Bar";
@@ -358,32 +359,32 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label background;
         private System.Windows.Forms.Label sushibarLabel;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label titleBlock;
+        private System.Windows.Forms.Label sashimiLabel;
         private System.Windows.Forms.TextBox sushiInput;
         private System.Windows.Forms.TextBox sashimiInput;
         private System.Windows.Forms.TextBox rollInput;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label sushiLabel;
+        private System.Windows.Forms.Label rollsLabel;
         private System.Windows.Forms.Button calcButton;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label subtotalLabel;
+        private System.Windows.Forms.Label taxLabel;
+        private System.Windows.Forms.Label totalLabel;
         private System.Windows.Forms.Label subtotalPrice;
         private System.Windows.Forms.Label taxAmount;
         private System.Windows.Forms.Label totalPrice;
         private System.Windows.Forms.TextBox tenderedText;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label tenderedLabel;
         private System.Windows.Forms.Button changeButton;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label changeLabel;
         private System.Windows.Forms.Label changeTotal;
         private System.Windows.Forms.Button recieptPrint;
         private System.Windows.Forms.Button neworderButton;
         private System.Windows.Forms.Label recieptLabel;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label recieptStart;
     }
 }
 
