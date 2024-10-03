@@ -50,10 +50,15 @@ namespace CashRegister
             numOfRolls = Convert.ToInt16(rollInput.Text);
 
 
+
+
             //Calculate Values
             subtotal = (numOfSashimi * sashimiPiece) + (numOfSushi * sushiPiece) + (numOfRolls * rolls);
             tax = subtotal * taxRate;
             total = subtotal + tax;
+
+
+
 
             //Prints Outputs
             subtotalPrice.Text = $"{subtotal.ToString("$.00")}";
@@ -87,6 +92,9 @@ namespace CashRegister
             sushibarLabel.Text = "SUPER RICH WOW!";
             ching.Play();
             }
+
+
+
             //if statement to see if tendered is more of equal to total
             if (tendered >= total)
             {
@@ -97,6 +105,9 @@ namespace CashRegister
             }
             else
             {
+
+
+
             //if tendered less than total Error 
             amountNeeded = total - tendered;
             changeTotal.Text = $"{amountNeeded.ToString("$.00")} Needed";
