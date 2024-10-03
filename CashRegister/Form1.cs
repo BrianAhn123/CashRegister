@@ -66,6 +66,10 @@ namespace CashRegister
             totalPrice.Text = $"{total.ToString("C")}";
             tenderedText.Enabled = true;
             }
+
+
+
+
             //Catch any Errors if letters are inputed
             catch
             {
